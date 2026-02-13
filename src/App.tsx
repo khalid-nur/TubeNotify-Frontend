@@ -1,5 +1,7 @@
+import LandingPage from "./pages/landing/LandingPage";
+
 const App = () => {
-  return <div className="container text-4xl underline">TubeNotify</div>;
+  return <LandingPage />;
 };
 
 export default App;
