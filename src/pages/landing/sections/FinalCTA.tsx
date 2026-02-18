@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const FinalCTA = () => {
   return (
@@ -33,7 +34,10 @@ const FinalCTA = () => {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-medium text-purple-600 shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:border-2 hover:border-purple-400">
+            <Link
+              to="/login"
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-medium text-purple-600 shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:border-2 hover:border-purple-400"
+            >
               Start Tracking Channels
               <motion.span
                 className="inline-block"
@@ -42,7 +46,7 @@ const FinalCTA = () => {
               >
                 <HiOutlineArrowSmRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </motion.span>
-            </button>
+            </Link>
           </div>
 
           <p className="mt-8 text-sm text-white/70">

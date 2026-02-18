@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { HiLightningBolt } from "react-icons/hi";
 import { PiTargetBold } from "react-icons/pi";
 import { FaRegBell } from "react-icons/fa6";
+import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -91,10 +93,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Never miss a video, get instant{" "}
-            <span className="bg-linear-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            Never miss a video, get instant
+            <span className="ml-2 bg-linear-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               SMS alerts
-            </span>{" "}
+            </span>
           </motion.h1>
 
           <motion.p
@@ -114,7 +116,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            <button className="group flex cursor-pointer items-center gap-2 rounded-full bg-linear-to-r from-purple-600 to-blue-600 px-8 py-4 text-lg font-medium text-white shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+            <Link
+              to="/login"
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-linear-to-r from-purple-600 to-blue-600 px-8 py-4 text-lg font-medium text-white shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+            >
               <FaRegBell className="h-5 w-5 transition-transform duration-300 ease-in-out group-hover:rotate-12" />
               Get Notified Instantly
               <motion.span
@@ -122,12 +127,15 @@ const Hero = () => {
                 animate={{ x: [0, 4, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
               >
-                →
+                <HiOutlineArrowSmRight />
               </motion.span>
-            </button>
-            <button className="cursor-pointer rounded-full border-2 border-gray-200 bg-white px-8 py-4 text-lg font-medium text-gray-700 transition-colors duration-300 ease-in-out hover:border-purple-400">
+            </Link>
+            <a
+              href="#how-it-works"
+              className="cursor-pointer rounded-full border-2 border-gray-200 bg-white px-8 py-4 text-lg font-medium text-gray-700 transition-colors duration-300 ease-in-out hover:border-purple-400"
+            >
               See How It Works
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
