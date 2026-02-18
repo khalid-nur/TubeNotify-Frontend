@@ -1,4 +1,5 @@
 import Features from "./sections/Features";
+import FinalCTA from "./sections/FinalCTA";
 import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
 import UseCases from "./sections/UseCases";
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Features />
       <HowItWorks />
       <UseCases />
+      <FinalCTA />
     </div>
   );
 };
