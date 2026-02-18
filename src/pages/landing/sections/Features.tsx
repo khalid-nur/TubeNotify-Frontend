@@ -27,7 +27,7 @@ const Features = () => {
             return (
               <motion.div
                 key={index}
-                className="group cursor-pointer rounded-2xl border border-gray-100 bg-white p-8 transition-all hover:border-purple-200 hover:shadow-lg"
+                className="group rounded-2xl border border-gray-100 bg-white p-8 transition-all hover:border-purple-200 hover:shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
