@@ -1,6 +1,7 @@
 import Features from "./sections/Features";
 import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
+import UseCases from "./sections/UseCases";
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <Hero />
       <Features />
       <HowItWorks />
+      <UseCases />
     </div>
   );
 };
